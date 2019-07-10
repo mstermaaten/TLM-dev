@@ -1,0 +1,26 @@
+{
+  "identity": "article",
+  "connection": "",
+  "displayedAttribute": "",
+  "schema": true,
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "createdBy": {
+      "model": "user"
+    },
+    "updatedBy": {
+      "model": "user"
+    },
+    "contributors": {
+      "collection": "user",
+      "via": "articles"
+    }
+  },
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
